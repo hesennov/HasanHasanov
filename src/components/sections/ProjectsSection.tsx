@@ -109,7 +109,7 @@ export function ProjectsSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="section-padding relative">
+    <section id="projects" className="section-padding relative overflow-hidden">
       <div className="absolute right-1/4 top-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute left-1/4 bottom-1/4 w-72 h-72 bg-violet-600/5 rounded-full blur-3xl pointer-events-none" />
 

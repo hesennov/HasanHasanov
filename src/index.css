@@ -42,6 +42,12 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #3b82f6 #0d1424;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {

@@ -57,7 +57,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="section-padding relative">
+    <section id="contact" className="section-padding relative overflow-hidden">
       <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[600px] h-64 bg-blue-600/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative" ref={ref}>

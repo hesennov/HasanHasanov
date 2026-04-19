@@ -14,7 +14,7 @@ export function AboutSection() {
   const [ref, inView] = useReveal();
 
   return (
-    <section id="about" className="section-padding relative">
+    <section id="about" className="section-padding relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow={t('about.eyebrow')}

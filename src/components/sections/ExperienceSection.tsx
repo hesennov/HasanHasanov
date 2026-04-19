@@ -21,7 +21,7 @@ export function ExperienceSection() {
   const [ref, inView] = useReveal({ threshold: 0.05 });
 
   return (
-    <section id="experience" className="section-padding relative">
+    <section id="experience" className="section-padding relative overflow-hidden">
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative" ref={ref}>
