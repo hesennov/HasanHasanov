@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hire": "Hire Me"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "available": "Open to Work",
+    "bio": "Building performant React apps with clean architecture and exceptional UX.",
+    "cta_work": "View My Work",
+    "cta_cv": "Download CV",
+    "scroll": "Scroll",
+    "roles": ["React Developer", "Frontend Engineer", "UI Architect", "Full Stack Developer"]
+  },
+  "stats": {
+    "experience": "Years Experience",
+    "projects": "Projects Shipped",
+    "commits": "GitHub Commits",
+    "clients": "Happy Clients"
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "title": "Passionate about",
+    "title_gradient": "great software",
+    "subtitle": "I turn complex requirements into elegant, maintainable React applications.",
+    "bio_1": "I'm a Middle React Developer from Azerbaijan with 3+ years of hands-on experience building production-grade SPAs. I've taken projects from zero to launch — including AI-powered platforms, e-commerce dashboards, and SaaS tools.",
+    "bio_2": "My expertise lies in Redux Toolkit, TypeScript, and building reusable design systems with Tailwind CSS. I care deeply about code quality, performance, and developer experience.",
+    "bio_3": "Outside of code, I contribute to open source, stay current with the React ecosystem, and mentor junior developers.",
+    "values": {
+      "architecture": { "title": "Clean Architecture", "desc": "Scalable folder structures, separation of concerns, and reusable component patterns." },
+      "performance": { "title": "Performance First", "desc": "Lazy loading, code splitting, memoization — 90+ Lighthouse scores by default." },
+      "ui": { "title": "Pixel-Perfect UI", "desc": "Translating Figma designs to life with precise attention to spacing, typography, and motion." },
+      "types": { "title": "Type Safety", "desc": "Strict TypeScript across the board. Types are documentation that never lies." }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "My",
+    "title_gradient": "Tech Stack",
+    "subtitle": "Technologies I use daily to build scalable, performant web applications.",
+    "categories": {
+      "frontend": "Frontend",
+      "state": "State & Data",
+      "styling": "UI & Styling",
+      "tools": "Tools & DevOps",
+      "backend": "Backend"
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "My",
+    "title_gradient": "Career Journey",
+    "subtitle": "From junior developer to leading full-stack projects in 3 years.",
+    "types": {
+      "fulltime": "Full-time",
+      "contract": "Contract",
+      "freelance": "Freelance"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Things I've",
+    "title_gradient": "Built",
+    "subtitle": "Production applications I've built and shipped, from idea to deployment.",
+    "live": "Live Demo",
+    "github": "GitHub",
+    "github_all": "View All on GitHub",
+    "more_on_github": "More projects on GitHub",
+    "featured": "Featured",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "fullstack": "Full Stack",
+      "ai": "AI/ML"
+    },
+    "metrics": {
+      "users": "Users",
+      "images": "Images Generated",
+      "uptime": "Uptime",
+      "performance": "Performance",
+      "accessibility": "Accessibility",
+      "load": "Load Time",
+      "products": "Products",
+      "orders": "Daily Orders"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's",
+    "title_gradient": "Work Together",
+    "subtitle": "Have a project in mind? I'd love to hear about it. Let's build something great.",
+    "open": "Open to opportunities",
+    "open_desc": "Currently available for freelance projects and full-time positions. Let's build something amazing together.",
+    "email_label": "Email",
+    "location_label": "Location",
+    "location": "México 🇲🇽",
+    "response": "Usually responds within",
+    "response_time": "24 hours",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success_title": "Message Sent! 🎉",
+      "success_desc": "Thanks for reaching out. I'll get back to you within 24 hours.",
+      "error": "Failed to send message. Please try again."
+    },
+    "validation": {
+      "name_min": "Name must be at least 2 characters",
+      "email_invalid": "Invalid email address",
+      "subject_min": "Subject is too short",
+      "message_min": "Message must be at least 20 characters"
+    }
+  },
+  "footer": {
+    "built_with": "Built with",
+    "using": "using React, Redux Toolkit & Tailwind CSS"
+  }
+}

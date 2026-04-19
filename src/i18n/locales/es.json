@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "hire": "Contrátame"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "available": "Disponible para trabajar",
+    "bio": "Construyendo apps React de alto rendimiento con arquitectura limpia y UX excepcional.",
+    "cta_work": "Ver mi trabajo",
+    "cta_cv": "Descargar CV",
+    "scroll": "Deslizar",
+    "roles": ["Desarrollador React", "Ingeniero Frontend", "Arquitecto UI", "Desarrollador Full Stack"]
+  },
+  "stats": {
+    "experience": "Años de Experiencia",
+    "projects": "Proyectos Entregados",
+    "commits": "Commits en GitHub",
+    "clients": "Clientes Satisfechos"
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Apasionado por el",
+    "title_gradient": "gran software",
+    "subtitle": "Convierto requisitos complejos en aplicaciones React elegantes y mantenibles.",
+    "bio_1": "Soy un Desarrollador React de nivel medio de Azerbaiyán con más de 3 años de experiencia construyendo SPAs de nivel de producción. He llevado proyectos de cero al lanzamiento — incluyendo plataformas de IA, dashboards de e-commerce y herramientas SaaS.",
+    "bio_2": "Mi especialidad es Redux Toolkit, TypeScript y la construcción de sistemas de diseño reutilizables con Tailwind CSS. Me preocupo profundamente por la calidad del código, el rendimiento y la experiencia del desarrollador.",
+    "bio_3": "Fuera del código, contribuyo al código abierto, me mantengo al día con el ecosistema React y mentorizo a desarrolladores junior.",
+    "values": {
+      "architecture": { "title": "Arquitectura Limpia", "desc": "Estructuras de carpetas escalables, separación de responsabilidades y patrones de componentes reutilizables." },
+      "performance": { "title": "Rendimiento Primero", "desc": "Carga perezosa, división de código, memoización — puntuaciones Lighthouse 90+ por defecto." },
+      "ui": { "title": "UI Perfecta al Píxel", "desc": "Traduciendo diseños de Figma con atención precisa al espaciado, tipografía y movimiento." },
+      "types": { "title": "Seguridad de Tipos", "desc": "TypeScript estricto en todos lados. Los tipos son documentación que nunca miente." }
+    }
+  },
+  "skills": {
+    "eyebrow": "Habilidades",
+    "title": "Mi",
+    "title_gradient": "Stack Tecnológico",
+    "subtitle": "Tecnologías que uso a diario para construir aplicaciones web escalables y de alto rendimiento.",
+    "categories": {
+      "frontend": "Frontend",
+      "state": "Estado & Datos",
+      "styling": "UI & Estilos",
+      "tools": "Herramientas & DevOps",
+      "backend": "Backend"
+    }
+  },
+  "experience": {
+    "eyebrow": "Experiencia",
+    "title": "Mi",
+    "title_gradient": "Trayectoria Profesional",
+    "subtitle": "De desarrollador junior a liderar proyectos full-stack en 3 años.",
+    "types": {
+      "fulltime": "Tiempo completo",
+      "contract": "Contrato",
+      "freelance": "Freelance"
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Cosas que he",
+    "title_gradient": "Construido",
+    "subtitle": "Aplicaciones de producción que he construido y lanzado, de la idea al despliegue.",
+    "live": "Demo en vivo",
+    "github": "GitHub",
+    "github_all": "Ver todo en GitHub",
+    "more_on_github": "Más proyectos en GitHub",
+    "featured": "Destacado",
+    "categories": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "fullstack": "Full Stack",
+      "ai": "IA/ML"
+    },
+    "metrics": {
+      "users": "Usuarios",
+      "images": "Imágenes Generadas",
+      "uptime": "Disponibilidad",
+      "performance": "Rendimiento",
+      "accessibility": "Accesibilidad",
+      "load": "Tiempo de Carga",
+      "products": "Productos",
+      "orders": "Pedidos Diarios"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Trabajemos",
+    "title_gradient": "Juntos",
+    "subtitle": "¿Tienes un proyecto en mente? Me encantaría escucharlo. Construyamos algo grandioso.",
+    "open": "Abierto a oportunidades",
+    "open_desc": "Actualmente disponible para proyectos freelance y posiciones a tiempo completo. Construyamos algo increíble juntos.",
+    "email_label": "Email",
+    "location_label": "Ubicación",
+    "location": "México 🇲🇽",
+    "response": "Normalmente responde en",
+    "response_time": "24 horas",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success_title": "¡Mensaje Enviado! 🎉",
+      "success_desc": "Gracias por contactarme. Responderé en 24 horas.",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    },
+    "validation": {
+      "name_min": "El nombre debe tener al menos 2 caracteres",
+      "email_invalid": "Dirección de correo inválida",
+      "subject_min": "El asunto es demasiado corto",
+      "message_min": "El mensaje debe tener al menos 20 caracteres"
+    }
+  },
+  "footer": {
+    "built_with": "Hecho con",
+    "using": "usando React, Redux Toolkit & Tailwind CSS"
+  }
+}
