@@ -83,7 +83,7 @@ export function HeroSection() {
               <Button id="hero-view-work" size="lg" onClick={() => scrollToSection('projects')} rightIcon={<ArrowDownIcon />}>
                 {t('hero.cta_work')}
               </Button>
-              <a href="/profile/cv.pdf" download="Hasan_Hasanov_CV.pdf">
+              <a href="/profile/hasanhasanov.dev.pdf" download="hasanhasanov.dev.pdf">
                 <Button id="hero-download-cv" variant="secondary" size="lg" leftIcon={<DownloadIcon />}>
                   {t('hero.cta_cv')}
                 </Button>
