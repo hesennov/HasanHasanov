@@ -1,7 +1,6 @@
-import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { projects, projectCategories, type ProjectCategory } from '@/data/portfolio.data';
+import { projects } from '@/data/portfolio.data';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
@@ -106,21 +105,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
   );
 }
 
-const CAT_I18N: Record<ProjectCategory, string> = {
-  All: 'projects.categories.all',
-  Frontend: 'projects.categories.frontend',
-  'Full Stack': 'projects.categories.fullstack',
-  'AI/ML': 'projects.categories.ai',
-};
-
 export function ProjectsSection() {
   const { t } = useTranslation();
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('All');
-
-  const filtered = useMemo(
-    () => activeCategory === 'All' ? projects : projects.filter((p) => p.category === activeCategory),
-    [activeCategory]
-  );
 
   return (
     <section id="projects" className="section-padding relative">
@@ -134,22 +120,9 @@ export function ProjectsSection() {
           description={t('projects.subtitle')}
         />
 
-        {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
-          {projectCategories.map((cat) => (
-            <SkillTag
-              key={cat}
-              id={`project-filter-${cat.replace(/\s/g, '-').toLowerCase()}`}
-              label={`${t(CAT_I18N[cat])} ${cat === 'All' ? projects.length : projects.filter((p) => p.category === cat).length}`}
-              active={activeCategory === cat}
-              onClick={() => setActiveCategory(cat)}
-            />
-          ))}
-        </div>
-
-        <motion.div layout className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <motion.div layout className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
           <AnimatePresence mode="popLayout">
-            {filtered.map((project, i) => <ProjectCard key={project.id} project={project} index={i} />)}
+            {projects.map((project, i) => <ProjectCard key={project.id} project={project} index={i} />)}
           </AnimatePresence>
         </motion.div>
 
@@ -163,7 +136,7 @@ export function ProjectsSection() {
             <TrendIcon />
             {t('projects.more_on_github')}
           </div>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" id="projects-github-all">
+          <a href="https://github.com/hesennov" target="_blank" rel="noopener noreferrer" id="projects-github-all">
             <Button variant="secondary" leftIcon={<GitHubIcon />}>{t('projects.github_all')}</Button>
           </a>
         </motion.div>
