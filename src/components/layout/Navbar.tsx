@@ -32,19 +32,28 @@ export function Navbar() {
   ];
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = (e?: Event) => {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      if (e && e.target && 'scrollTop' in e.target) {
+        scrollTop = Math.max(scrollTop, (e.target as Element).scrollTop || 0);
+      }
+      setScrolled(scrollTop > 20);
+    };
     
     // Check initial scroll position on mount
     onScroll();
     
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    // Use capture phase to catch scroll events from any scrollable container (like #root or body)
+    window.addEventListener('scroll', onScroll, { passive: true, capture: true });
+    return () => window.removeEventListener('scroll', onScroll, { capture: true });
   }, []);
 
   const handleNav = (href: SectionId) => {
     scrollToSection(href);
     dispatch(closeMobileMenu());
   };
+
+  const isScrolled = scrolled || activeSection !== 'hero';
 
   return (
     <>
@@ -54,7 +63,7 @@ export function Navbar() {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-          scrolled ? 'glass border-b border-white/5 py-3' : 'bg-transparent py-5'
+          isScrolled ? 'glass border-b border-white/5 py-3' : 'bg-transparent py-5'
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
