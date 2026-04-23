@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '@/app/store';
 import { toggleMobileMenu, closeMobileMenu } from '@/features/ui/uiSlice';
-import { toggleTheme } from '@/features/theme/themeSlice';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/utils/cn';
@@ -22,7 +21,6 @@ export function Navbar() {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
   const { isMobileMenuOpen, activeSection } = useAppSelector((s) => s.ui);
-  const { mode } = useAppSelector((s) => s.theme);
   const [scrolled, setScrolled] = useState(false);
 
   const NAV_ITEMS: { labelKey: string; href: SectionId }[] = [
